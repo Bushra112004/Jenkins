@@ -1,4 +1,4 @@
-pipeline{
+ibushpipeline{
 
 agent any
 
