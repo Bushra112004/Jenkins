@@ -13,7 +13,7 @@ pipeline {
 						}
 			  stage("execute") {
 			        steps {
-					       sh 'java -jar target/*.jar > /var/lib/jenkins/workspace/maven/text.txt'
+					       sh 'sudo java -jar target/*.jar > /var/lib/jenkins/workspace/maven/text.txt'
 
 						   }
 						}
