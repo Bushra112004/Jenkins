@@ -9,14 +9,9 @@ pipeline {
 			  stage("testing") {
 			        steps {
 					       sh 'sudo mvn clean package'
-						   }
-						}
-			  stage("execute") {
-			        steps {
-					       sh ''' \'java -jar target/*.jar > /var/lib/jenkins/workspace/maven/text.txt\'
-'''
-
-						   }
-						}
-		}	
+						 }
+					
+                                            }
+			
+		 }	
 }
